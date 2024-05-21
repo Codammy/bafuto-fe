@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.title-mob {
+  z-index: 99;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: crimson;
+  color: white;
+  align-items: center;
+}
+ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-weight: 600;
+}
+ul li {
+  padding: 10px;
+  margin-inline: 15px;
+  cursor: pointer;
+}
+ul li .line-under {
+  width: 0%;
+  background-color: white;
+  height: 0;
+  height: 2px;
+  transition: 0.5s;
+}
+ul li:hover .line-under {
+  width: 100%;
+  transition: 0.5s;
+}
+/* ul li:hover {
+  border-bottom: 3px solid white;
+} */
+.title-mob {
+  display: none;
+}
+.btn {
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 7px;
+  border: none;
+  background-color: white;
+  margin-right: 15px;
+  border: 3px solid red;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:hover .bg-move {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn .bg-move {
+  color: white;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background-color: crimson;
+}
+.signup {
+  background-color: crimson;
+  border: 3px solid white;
+  color: white;
+}
+.signup .bg-move {
+  background-color: white;
+  color: crimson;
+}
+.signup:hover .bg-move {
+  color: black;
+}
+.burger {
+  display: none;
+  z-index: 99;
+}
+
+.fa-burger,
+.fa-x {
+  padding: 25px 10px;
+  border: 3px solid white;
+  border-radius: 7px;
+}
+
+main {
+  padding: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  /* Mobile view nav styling */
+  nav {
+    padding: 30px;
+  }
+  nav .title-mob {
+    display: block;
+  }
+  nav .title-desk {
+    display: none;
+  }
+
+  .hide {
+    top: -100%;
+    transition: 0.5s;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    height: fit-content;
+    background-color: crimson;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+
+    width: 100%;
+  }
+  .contain-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .contain-btn .btn {
+    margin-block: 10px;
+    width: 100%;
+    margin-inline: 20px;
+  }
+  .burger {
+    display: block;
+  }
+}
