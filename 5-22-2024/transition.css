@@ -1,0 +1,59 @@
+/* Transition properties */
+.transite {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin-block: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0s; /* 2s */
+  transition-timing-function: ease-in-out;
+  /* transition-property: background-color, border-radius; */
+}
+
+.contain-transite {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.transite.bg:hover {
+  /* Color Transition*/
+  background-color: red;
+}
+
+.transite.size:hover {
+  /* Size transition*/
+  width: 150px;
+  height: 150px;
+}
+.transite.circle:hover {
+  /* Radius or cirlce transition */
+  border-radius: 50%;
+}
+
+.transite.rotate:hover {
+  /* Rotate Transition */
+  transform: rotate(360deg);
+}
+
+.transite.pos:hover {
+  /* Position Transition */
+  transform: translateY(-50px);
+}
+
+.transite.fade:hover {
+  /* Position Transition */
+  opacity: 0;
+}
+.transite.all {
+  margin: 10px auto;
+}
+.transite.all:hover {
+  /* Position Transition */
+  background-color: red;
+  border-radius: 50%;
+  transform: rotate(360deg);
+  /* transform: translateY(-50px); */
+  opacity: 0.5;
+  width: 150px;
+  height: 150px;
+}

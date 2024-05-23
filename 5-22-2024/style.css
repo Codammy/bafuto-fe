@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("./transition.css");
+@import url("./animation.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: "Poetsen One", sans-serif;
+  padding: 25px;
+}
+h1 {
+  width: fit-content;
+  margin: 20px auto;
+  text-shadow: -5px 4px 7px white;
+}
+
+.container {
+  display: flex;
+}
+.transition,
+.animation {
+  width: 50%;
+}
+
+.transition h2 {
+  color: red;
+  text-shadow: 1px 1px 2px white;
+}
+.animation h2 {
+  color: blue;
+  text-shadow: 1px 1px 2px white;
+}
